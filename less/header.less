@@ -1,0 +1,35 @@
+header {
+	.navbar-default {
+		background: #fff;
+		min-height: 100px;
+		padding: 12px 0;
+		border-bottom: 5px solid @border-color;
+		margin-bottom: 0;
+		.navbar-nav > li {
+			&.active {
+				> a {
+					color: darken(@menu-color, 10%);
+					background: transparent;
+					font-weight: bold;
+					&:hover,
+					&:focus {
+						color: darken(@menu-color, 10%);
+						background: transparent;
+					}
+				}
+			}
+			> a {
+				padding-top: 25px;
+				padding-bottom: 25px;
+				color: @menu-color;
+				text-transform: uppercase;
+				.transition(all 0.2s ease-in-out 0s);
+				&:hover,
+				&:focus {
+					color: darken(@menu-color, 10%);
+					background: transparent;
+				}
+			}
+		}
+	}
+}
