@@ -154,3 +154,192 @@ img {
 		}
 	}
 }
+
+@font-face {
+	font-family: OpenSansRegular;
+	src: url('../fonts/OpenSans-Regular.ttf')
+}
+@font-face {
+	font-family: OpenSansLight;
+	src: url('../fonts/OpenSans-Light.ttf')
+}
+@font-face {
+	font-family: OpenSansLightItalic;
+	src: url('../fonts/OpenSans-LightItalic.ttf')
+}
+@font-face {
+	font-family: OpenSansSemibold;
+	src: url('../fonts/OpenSans-Semibold.ttf')
+}
+@font-face {
+	font-family: OpenSansExtraBold;
+	src: url('../fonts/OpenSans-ExtraBold.ttf')
+}
+body {
+	font-family: OpenSansRegular;
+	background: url('../images/body-bg.png');
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: OpenSansLight;
+}
+a {
+	text-decoration: none;
+}
+.padding-zero {
+	padding: 0;
+}
+.text-right {
+	text-align: right;
+}
+.main-wrap {
+	width: 100%;
+	border-top: 5px solid #0099d2;
+	padding-top: 75px;
+	background: transparent;
+}
+.heading-wrap {
+	margin-bottom: 75px;
+	text-align: center;
+	color: #fff;
+	.title {
+		font-size: 66px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	.tag-line {
+		font-size: 23px;
+		font-weight: normal;
+	}
+}
+.content-container {
+	background-image: linear-gradient(transparent 100px, #f3f3f5 100px, #f3f3f5 100%);
+}
+/* Contact page style */
+.content-wrap {
+	background-color: #fff;
+	font-weight: normal;
+	color: #757575;
+}
+.contact-form {
+	border-top: 15px solid #0198d1;
+	padding: 40px;
+	.required-instruction {
+		margin-bottom: 30px;
+		font-size: 16px;
+	}
+	.required {
+		color: #ff0000;
+	}
+	.form-group {
+		label {
+			font-weight: normal;
+			font-size: 16px;
+		}
+		.text-box {
+			height: 55px;
+			border-color: #00aff0;
+		}
+		textarea {
+			min-height: 185px;
+		}
+	}
+	.submit {
+		border-color: #00aff0;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #00aff0;
+		&:hover, &:focus {
+			background-color: #00aff0;
+			color: #fff;
+		}
+	}
+}
+.careers-form {
+	border-top-color: #8ec63f;
+}
+.sticky-btn-wrap {
+	position: absolute;
+	left: 0;
+	top: 90%;
+	text-transform: uppercase;
+	-webkit-transform: rotate(270deg);
+	   -moz-transform: rotate(270deg);
+	        transform: rotate(270deg);
+	-webkit-transform-origin: 0 0;
+	   -moz-transform-origin: 0 0;
+		    transform-origin: 0 0;
+	.sticky-btn {
+		display: inline-block;
+		padding: 8px 20px;
+		color: #fff;
+	}
+	.careers {
+		background: #8ec63f;
+	}
+	.project {
+		background: #0198d1;
+	}
+}
+
+/* Style for About page */
+
+.about-container {
+	background-color: #fff;
+	font-size: 18px;
+	.title {
+  		margin-bottom: 30px;
+  		font-size: 32px;
+  		text-transform: uppercase;
+  		color: #4fbfed;
+  	}
+  	.superior-benefits-content {
+  		margin-bottom: 60px;
+  	}
+  	.superior-benefits {
+  		margin: 0;
+  		margin-bottom: 10px;
+  		padding-left: 15px;
+  		font-family: OpenSansLightItalic;
+  	}
+  	.who-avisyn {
+	  	padding-left: 50px;
+	 	background: linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);;
+	  	background-size: cover;
+	  	.about-avisyn-outer {
+	  		padding-top: 90px;
+	  	}
+	  	.founder-img-outer {
+	  		text-align: right;
+	  		.founder-img {
+		  		display: initial;
+		  	}
+		  	@media(max-width: 991px) {
+		  		text-align: center;
+		  	}
+	  	}
+	  	@media(max-width: 991px) {
+	  		padding-right: 50px;
+	  	}
+	}
+	.about-content-wrap {
+		padding: 50px;
+		.other-content {
+			margin-top: 30px;
+			.author {
+				font-family: OpenSansSemibold;
+			}
+			.founder {
+				font-family: OpenSansExtraBold;
+			}
+		}
+		.contact-us-link {
+			margin-top: 80px;
+			.contact {
+				border-top: 1px solid #44c4f3;
+				padding-top: 20px;
+				color: #44c4f3;
+			}
+		}
+	}
+
+}
