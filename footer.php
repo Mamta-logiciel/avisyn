@@ -1,14 +1,14 @@
 	<footer>
 		<div class="upper-footer">
 			<div class="container">
-				<div class="col-sm-6">
+				<div class="col-md-6 copyright">
 					<p>COPYRIGHT &copy; 2016 · <strong>AVISYN</strong> · ALL RIGHTS RESERVED</p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-md-6">
 					<ul class="footer-menu navbar-right">
-						<li><a href="#">Services</a></li>
+						<li><a href="services.php">Services</a></li>
 						<li><a href="#">Careers</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="about.php">About</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</div>

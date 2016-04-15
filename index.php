@@ -5,8 +5,8 @@
 	<!-- Top Banner -->
 	<div class="welcome-banner">
 		<div class="button-container">
-			<a href="#" class="btn btn-contact btn-contact-blue">start a project with us</a>
-			<a href="#" class="btn btn-contact btn-contact-green">start a career with us</a>
+			<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
+		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
 		</div>
 		<div class="container">
 			<div class="banner-content">

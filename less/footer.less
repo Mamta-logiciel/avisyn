@@ -8,6 +8,11 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
+	.copyright {
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
 	.footer-menu {
 		margin-bottom: 0;
 		li {
@@ -28,7 +33,16 @@
 				&:hover {
 					color: #eee;
 				}
+				@media (max-width: 991px) {
+					// padding: 0 10px;
+				}
 			}
+		}
+		@media (max-width: 991px) {
+			float: none!important;
+			margin-top: 10px;
+			padding: 0;
+			text-align: center;
 		}
 	}
 }

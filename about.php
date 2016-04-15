@@ -1,23 +1,16 @@
 <?php include_once 'header.php'; ?>
 
+<!-- Sticky buttons section starts -->
+<div class="welcome-banner sticky-btns">
+	<div class="button-container">
+		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
+		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
+	</div>
+</div>
+<!-- Sticky buttons section ends -->
+
 <div class="main-wrap">
 	<div class="container">
-
-	<!-- Sticky buttons section starts -->
-		<section class="sticky-btn-wrap">
-			<a href="">
-				<div class="sticky-btn careers">
-					start a career with us
-				</div>
-			</a>
-			<a href="">
-				<div class="sticky-btn project">
-					start a project with us
-				</div>
-			</a>
-		</section>
-		<!-- Sticky buttons section ends -->
-		
 		<!-- Page heading section starts -->
 		<section class="heading-wrap">
 			<h1 class="title">about avisyn</h1>
@@ -26,10 +19,13 @@
 		<!-- Page heading section ends -->	
 	</div>
 </div>
-		<!-- Form section starts -->
+
+<!-- Main contant container section starts -->
 <div class="content-container">
 	<div class="container">
 		<section class="content-wrap about-container">
+
+			<!-- Section Who is Avisyn -->
 			<div class="who-avisyn">
 				<div class="row">
 					<div class="col-md-6 about-avisyn-outer">
@@ -37,10 +33,12 @@
 						<p>While insourcing is not a new concept, it’s not that widely used in the drug discovery and development industry. And yet it seems ideally suited to a business where you need different specialized experts at each stage of the pipeline. Why go through the lengthy process of finding and hiring a team of scientists only to have to lay them off a year later when that phase of the project is complete? It was in part my own personal experience going through that process that inspired me and my partners to start AviSyn.</p>
 					</div>
 					<div class="col-md-6 founder-img-outer">
-						<img src="images/avisyn.png" class="img-responsive founder-img">
+						<img src="images/avisyn-2.png" class="img-responsive founder-img">
 					</div>
 				</div>
 			</div>
+
+			<!-- Section About content -->
 			<div class="about-content-wrap">
 				<div class="row superior-benefits-content">
 					<div class="col-md-5">
@@ -71,12 +69,12 @@
 				<p class="other-content"><span class="author">– Jeffrey Albert, PhD.,</span> <span class="founder">AviSyn Founder</span></p>
 
 				<div class="contact-us-link">
-				<p><span class="contact">Contact us</span> to learn more.</p>
+				<p><a href="#"><span class="contact">Contact us</span></a> to learn more.</p>
 				</div>
 			</div>
 		</section>
-		<!-- Form section ends -->
 	</div>
 </div>
+<!-- Main contant container section ends -->
 
 <?php include_once 'footer.php'; ?>
