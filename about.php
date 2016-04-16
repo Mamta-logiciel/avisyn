@@ -28,11 +28,11 @@
 			<!-- Section Who is Avisyn -->
 			<div class="who-avisyn">
 				<div class="row">
-					<div class="col-md-6 about-avisyn-outer">
+					<div class="col-md-6 about-avisyn-outer right-padding">
 						<h2 class="title">who is avisyn?</h2>
 						<p>While insourcing is not a new concept, it’s not that widely used in the drug discovery and development industry. And yet it seems ideally suited to a business where you need different specialized experts at each stage of the pipeline. Why go through the lengthy process of finding and hiring a team of scientists only to have to lay them off a year later when that phase of the project is complete? It was in part my own personal experience going through that process that inspired me and my partners to start AviSyn.</p>
 					</div>
-					<div class="col-md-6 founder-img-outer">
+					<div class="col-md-6 founder-img-outer left-padding">
 						<img src="images/avisyn.png" class="img-responsive founder-img">
 					</div>
 				</div>
@@ -44,8 +44,8 @@
 					<div class="col-md-5">
 						<h2 class="title superior-benefits">“The superior benefits of insourcing versus outsourcing—faster communication and greater collaboration“</h2>
 					</div>
-					<div class="col-md-7">
-						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering, our division decided to insource 15 chemists—20% of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
+					<div class="col-md-7 left-padding">
+						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering, our division decided to insource 15 chemists of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
 					</div>
 				</div>
 				<p class="other-content">
@@ -66,8 +66,7 @@
 				<p class="other-content">
 					At AviSyn, we’re re-formulating the way drug discovery and development gets done.
 				</p>
-				<p class="other-content"><span class="author">– Jeffrey Albert, PhD.,</span> <span class="founder">AviSyn Founder</span></p>
-
+				<p class="other-content"><span class="author">– Jeffrey Albert,</span> <span class="founder">PhD., AviSyn Founder</span></p>
 				<div class="contact-us-link">
 				<p><a href="#"><span class="contact">Contact us</span></a> to learn more.</p>
 				</div>
