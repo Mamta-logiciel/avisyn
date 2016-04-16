@@ -45,7 +45,7 @@
 						<h2 class="title superior-benefits">“The superior benefits of insourcing versus outsourcing—faster communication and greater collaboration“</h2>
 					</div>
 					<div class="col-md-7">
-						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering, our division decided to insource 15 chemists of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
+						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering, our division decided to insource 15 chemists—20% of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
 					</div>
 				</div>
 				<p class="other-content">

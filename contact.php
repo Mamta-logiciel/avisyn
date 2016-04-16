@@ -39,7 +39,7 @@
 					<label for="message">Message <span class="required">*</span></label>
 					<textarea class="text-box form-control" id="message"></textarea>
 				</div>
-				<p>200 word(s) left</p>
+				<p class="color-grey">200 word(s) left</p>
 				<button type="submit" class="btn btn-default submit">Submit</button>
 			</form>
 		</section>
