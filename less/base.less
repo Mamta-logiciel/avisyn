@@ -64,7 +64,7 @@ img {
 	}
 }
 .button-container {
-	position: relative;
+	position: fixed;
 	float: left;
 	margin-top: -22px;
 	-webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
@@ -75,6 +75,7 @@ img {
 	     -o-transform-origin: 285px 285px 0;
 	@media (max-width: 767px) {
 		float: none;
+		position: relative;
 		margin-top: 10px;
 		text-align: center;
 		-webkit-transform: rotate(0deg);  /* Saf3.1+, Chrome */
@@ -89,7 +90,9 @@ img {
 	padding: 6px 12px;
 	font-weight: bold;
 	font-family: OpenSansBold;
-	&:hover {
+	transition: .3s ease;
+	&:hover,
+	&:focus {
 		color: #fff;
 	}
 	@media (max-width: 480px) {
@@ -313,8 +316,20 @@ a {
 .padding-zero {
 	padding: 0;
 }
+.left-padding {
+	padding-left: 0;
+}
+.right-padding {
+	padding-right: 0;
+}
 .text-right {
 	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
 }
 .main-wrap {
 	width: 100%;
@@ -389,6 +404,7 @@ a {
 .about-container {
 	background-color: #fff;
 	font-size: 18px;
+	color: #b1b1b1;
 	.title {
   		margin-bottom: 30px;
   		font-size: 32px;
@@ -396,25 +412,27 @@ a {
   		color: #4fbfed;
   	}
   	.superior-benefits-content {
-  		margin-bottom: 60px;
+  		margin-bottom: 35px;
   	}
   	.superior-benefits {
   		margin: 0;
   		margin-bottom: 10px;
-  		padding-left: 15px;
+  		padding-left: 34px;
+  		padding-right: 	40px;
   		font-family: OpenSansLightItalic;
   		font-size: 34px;
+  		text-transform: inherit;
   		@media (max-width: 480px) {
   			padding-left: 0;
   			font-size: 28px;
   		}
   	}
   	.who-avisyn {
-	  	padding-left: 50px;
-	 	background: linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);;
+	  	padding-left: 60px;
+	 	background: linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
 	  	background-size: cover;
 	  	.about-avisyn-outer {
-	  		padding-top: 70px;
+	  		padding-top: 62px;
 	  		p {
 	  			margin-bottom: 30px;
 	  		}
@@ -433,7 +451,7 @@ a {
 	  	}
 	}
 	.about-content-wrap {
-		padding: 50px;
+		padding: 50px 60px;
 		.other-content {
 			margin-top: 30px;
 			.author {
@@ -444,7 +462,7 @@ a {
 			}
 		}
 		.contact-us-link {
-			margin-top: 80px;
+			margin-top: 70px;
 			.contact {
 				border-top: 1px solid #44c4f3;
 				padding-top: 20px;
@@ -461,4 +479,7 @@ a {
 }
 .contact-wrap {
 	border-color: transparent;
+}
+.avisyn-text-space {
+	letter-spacing: 0.2px;
 }
