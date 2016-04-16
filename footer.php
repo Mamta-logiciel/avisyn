@@ -18,7 +18,8 @@
 			<img src="images/small-logo.png" alt="ANISYS">
 		</div>
 	</footer>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

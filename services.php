@@ -45,7 +45,7 @@
 			<div class="services-mid-banner mid-banner">
 				<div class="mid-content">
 					<h4>why insource with avisyn</h4>
-					<p>With over 30 combined years of drug discovery and development research in pharma and biotech — both managing and at the bench — the AviSyn team understands the kind of expertise it takes to move compounds through the pipeline. We nurture teams of expert, innovative scientists that can be in place, on site within weeks, and that will stay until your project is complete. Reporting directly to your project leaders while also being further guided and mentored by our experienced management team, AviSyn’s scientists bring a wealth of industry experience to your site.</p>
+					<p>With decades of combined drug discovery and development research in pharma and biotech — both managing and at the bench — the AviSyn team understands the kind of expertise it takes to move compounds through the pipeline. We nurture teams of expert, innovative scientists that can be in place, on site within weeks, and that will stay until your project is complete. Reporting directly to your project leaders while also being further guided and mentored by our experienced management team, AviSyn’s scientists bring a wealth of industry experience to your site.</p>
 				</div>
 			</div>
 
@@ -58,9 +58,11 @@
 						<p>Supporting a wide range of drug discovery and development activities, we are currently offering scientific expertise in the following areas:  Synthesis, medicinal chemistry design, computational chemistry, and analytical chemistry.</p>
 					</div>
 					<div class="col-md-6 cols-content">
+					<div>
 						<img src="images/map.png">
 						<h4>what regions do we serve?</h4>
 						<p>Currently focused on the San Diego area, we are rapidly expanding our services to other biotech hubs such as San Francisco and Boston. <a href="">Contact us</a> to find out if we can support a project in your region.</p>
+						</div>
 					</div>
 				</div>
 			</div>

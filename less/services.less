@@ -31,13 +31,18 @@
 }
 .content-wrap {
 	.insourcing-wrap {
-		background: #fff;
+		@media (max-width: 991px) {
+			background: #fff;
+		}
 	}
 	.services-cols {
 		padding: 50px 55px;
 		background: #fff;
 		clear: both;
 		.cols-content {
+			img {
+				width: 100%;
+			}
 			h4 {
 				margin: 40px 0;
 				font-family: openSansLight;

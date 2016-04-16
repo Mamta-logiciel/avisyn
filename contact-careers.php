@@ -13,7 +13,7 @@
 	<div class="container">
 		<!-- Page heading section starts -->
 		<section class="heading-wrap">
-			<h1 class="title">start a career with us</h1>
+			<h1 class="title">Build your career with us</h1>
 			<p class="tag-line">Learn about open jobs.</p>
 		</section>
 		<!-- Page heading section ends -->	
