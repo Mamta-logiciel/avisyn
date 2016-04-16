@@ -28,14 +28,14 @@
 			<!-- Section What is Insourcing -->
 			<div class="who-avisyn insourcing-wrap">
 				<div class="row">
-					<div class="col-md-6 about-avisyn-outer">
+					<div class="col-md-6 about-avisyn-outer services-text padding-right-zero">
 						<h2 class="title">what is insourcing?</h2>
-						<p>Insourcing is an innovative scientific staffing solution that is ideally suited for the changing stages of drug discovery and development programs.</p>
-						<p>Combining the flexibility and expertise of outsourcing to a CRO with the immediate communication, collaboration, and IP security possible with an in-house team, insourcing lets companies hire expert teams of scientists for defined project stages. Simply contact us with your project needs, and within weeks we’ll have a team up and running at your site.</p>
+						<p class="letter-space05">Insourcing is an innovative scientific staffing solution that is ideally suited for the changing stages of drug discovery and development programs.</p>
+						<p>Combining the flexibility and expertise of outsourcing to a CRO with the immediate communication, collaboration, and IP security possible with an in-house team, insourcing lets companies hire expert teams of scientists for defined project stages. Simply <a href="contact.php">contact us</a> with your project needs, and within weeks we’ll have a team up and running at your site.</p>
 						<hr class="text-with-border">
-						<p class="find-out-text"><span>Find out how</span> one scientist’s insourcing experience inspired him to start AviSyn. READ NOW</p>
+						<p class="find-out-text"><span>Find out how</span> one scientist’s insourcing experience inspired him to start AviSyn. <a href="#"><b>READ NOW</b></a></p>
 					</div>
-					<div class="col-md-6 founder-img-outer">
+					<div class="col-md-6 founder-img-outer padding-left-zero">
 						<img src="images/insourcing-services.png" class="img-responsive founder-img">
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 					<div>
 						<img src="images/map.png">
 						<h4>what regions do we serve?</h4>
-						<p>Currently focused on the San Diego area, we are rapidly expanding our services to other biotech hubs such as San Francisco and Boston. <a href="">Contact us</a> to find out if we can support a project in your region.</p>
+						<p>Currently focused on the San Diego area, we are rapidly expanding our services to other biotech hubs such as San Francisco and Boston. <a href="contact.php">Contact us</a> to find out if we can support a project in your region.</p>
 						</div>
 					</div>
 				</div>

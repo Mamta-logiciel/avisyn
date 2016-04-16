@@ -3,6 +3,7 @@ body {
 	color: @primary-grey-color;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	line-height: 26px;
 }
 a {
 	&:active,
@@ -27,6 +28,10 @@ h5 {
 }
 img {
 	max-width: 100%;
+}
+.color-grey {
+	color: #898989;
+	font-size: 16px;
 }
 .btn-custom-blue {
 	background: #fff;
@@ -114,16 +119,16 @@ img {
 	background-position: center;
 	min-height: 680px;
 	.banner-content {
-		background: rgba(0, 153, 210, 0.5);
-		padding: 40px 90px;
-		margin: 300px 120px 150px 120px;
+		background: rgba(0, 153, 210, 0.7);
+		padding: 18px 54px;
+		margin: 370px 145px 135px 145px;
 		// min-height: 190px;
 		text-align: center;
 		h1 {
 			text-transform: uppercase;
 			color: #fff;
 			font-size: 66px;
-			margin-top: 0;
+			margin: 15px 0 3px;
 			font-weight: 300;
 			span {
 				font-weight: bold;
@@ -133,6 +138,17 @@ img {
 			color: #fff;
 			font-size: 24px;
 			font-family: OpenSansLight;
+			padding: 0;
+			letter-spacing: 1px;
+			a {
+				font-family: OpenSansSemibold;
+				font-weight: 600;
+				color: #fff;
+				&:hover,
+				&:focus {
+					color: #eee;
+				}
+			}
 		}
 	}
 	@media(max-width: 767px) {
@@ -153,15 +169,59 @@ img {
 	background: transparent;
 	min-height: inherit;
 }
+.padding-right-zero {
+	padding-right: 0;
+}
+.padding-left-zero {
+	padding-left: 0;
+}
+.letter-space05 {
+	letter-spacing: 0.5px;
+}
+@media(max-width: 767px) {
+	.padding-right-zero {
+		padding-right: 15px;
+	}
+	.padding-left-zero {
+		padding-left: 15px;
+	}
+}
 .main-section {
 	background: #fafafc;
 	.content-section {
 		padding: 70px 0;
 		p {
 			font-size: 18px;
+			line-height: 26px;
+		}
+		.insourcing-content {
+			letter-spacing: 1.5px;
+			line-height: 26px;
 		}
 		.btn {
 			margin-top: 10px;
+		}
+	}
+	.padding-right-zero {
+		padding-right: 0;
+	}
+	.padding-left-zero {
+		padding-left: 0;
+	}
+	.scientist-image { 
+		margin-top: 5px;
+	}
+	@media screen and (min-width:767px) and (max-width:990px){
+		.scientist-image {
+			margin-top: 18%;
+		}
+	}
+	@media(max-width: 767px) {
+		.padding-right-zero {
+			padding-right: 15px;
+		}
+		.padding-left-zero {
+			padding-left: 15px;
 		}
 	}
 }
@@ -180,6 +240,20 @@ img {
 	}
 	.home-inner-cols {
 		padding: 0 40px;
+		.text-muted {
+			color: #707070;
+			line-height: 26px;
+			a {
+				display: block;
+				font-family: OpenSansSemibold;
+				font-weight: 600;
+				color: #2ca8d4;
+				&:hover,
+				&:focus {
+					opacity: 0.8;
+				}
+			}
+		}
 	}
 	h5 {
 		margin: 40px 0;
@@ -288,14 +362,14 @@ a {
 		}
 		.text-box {
 			height: 55px;
-			border-color: #00aff0;
+			border: 2px solid #00aff0;
 		}
 		textarea {
 			min-height: 185px;
 		}
 	}
 	.submit {
-		border-color: #00aff0;
+		border: 2px solid #00aff0;
 		font-family: openSansBold;
 		font-size: 16px;
 		text-transform: uppercase;
