@@ -5,8 +5,8 @@
 	<!-- Top Banner -->
 	<div class="welcome-banner">
 		<div class="button-container">
-			<a href="#" class="btn btn-contact btn-contact-blue">start a project with us</a>
-			<a href="#" class="btn btn-contact btn-contact-green">start a career with us</a>
+			<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
+		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
 		</div>
 		<div class="container">
 			<div class="banner-content">
@@ -46,7 +46,7 @@
 			      	<h5>
 			      		<strong>Why Insource with AviSyn?</strong>
 			      	</h5>
-			      	<p class="text-muted">With over 30 combined years of drug discovery and development research in pharma and biotech, both managing and at the bench. </p>
+			      	<p class="text-muted">With decades of combined drug discovery and development research in pharma and biotech, both managing and at the bench. </p>
 			    </div>
 				<div class="col-sm-4 home-inner-cols">
 					<div class="text-center">
@@ -77,7 +77,7 @@
 	<div class="mid-banner">
 		<div class="mid-content">
 			<h4>Join the AviSyn Team</h4>
-			<a href="#" class="btn btn-custom-white btn-lg">Join Now</a>
+			<a href="#" class="btn btn-custom-white btn-lg">Learn More</a>
 		</div>
 	</div>
 

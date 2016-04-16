@@ -13,18 +13,18 @@
 	<div class="container">
 		<!-- Page heading section starts -->
 		<section class="heading-wrap">
-			<h1 class="title">Build your career with us</h1>
-			<p class="tag-line">Learn about open jobs.</p>
+			<h1 class="title">contact us</h1>
+			<p class="tag-line">Tell us about your needs.</p>
 		</section>
-		<!-- Page heading section ends -->	
+		<!-- Page heading section ends -->
 	</div>
 </div>
 
 <!-- Main contant container section starts -->
 <div class="content-container">
 	<div class="container">
-		<!-- Form Career section starts -->
-		<section class="content-wrap careers-form contact-form">
+		<!-- Form Contact section starts -->
+		<section class="content-wrap contact-form contact-wrap">
 			<form>
 				<p class="required-instruction">Fields marked with an <span class="required">*</span> are required</p>
 				<div class="form-group">

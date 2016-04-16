@@ -1,23 +1,16 @@
 <?php include_once 'header.php'; ?>
 
+<!-- Sticky buttons section starts -->
+<div class="welcome-banner sticky-btns">
+	<div class="button-container">
+		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
+		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
+	</div>
+</div>
+<!-- Sticky buttons section ends -->
+
 <div class="main-wrap">
 	<div class="container">
-
-	<!-- Sticky buttons section starts -->
-		<section class="sticky-btn-wrap">
-			<a href="">
-				<div class="sticky-btn careers">
-					start a career with us
-				</div>
-			</a>
-			<a href="">
-				<div class="sticky-btn project">
-					start a project with us
-				</div>
-			</a>
-		</section>
-		<!-- Sticky buttons section ends -->
-		
 		<!-- Page heading section starts -->
 		<section class="heading-wrap">
 			<h1 class="title">about avisyn</h1>
@@ -26,10 +19,13 @@
 		<!-- Page heading section ends -->	
 	</div>
 </div>
-		<!-- Form section starts -->
+
+<!-- Main contant container section starts -->
 <div class="content-container">
 	<div class="container">
 		<section class="content-wrap about-container">
+
+			<!-- Section Who is Avisyn -->
 			<div class="who-avisyn">
 				<div class="row">
 					<div class="col-md-6 about-avisyn-outer">
@@ -41,13 +37,15 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Section About content -->
 			<div class="about-content-wrap">
 				<div class="row superior-benefits-content">
 					<div class="col-md-5">
 						<h2 class="title superior-benefits">“The superior benefits of insourcing versus outsourcing—faster communication and greater collaboration“</h2>
 					</div>
 					<div class="col-md-7">
-						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering multiple options, we decided to insource fifteen synthetic chemists—20% of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
+						<p>Many years back, I was a scientist at AstraZeneca responsible for review and oversight of our outsourcing strategies and CRO partners. We faced an urgent resourcing gap in our chemistry department, but we had a head-count freeze. After considering, our division decided to insource 15 chemists of our total count—because of the speed and flexibility of the process. These chemists had outstanding qualifications and I was able to see first-hand the superior benefits of insourcing versus outsourcing—faster communication and greater collaboration because we were all there in the same place.</p>
 					</div>
 				</div>
 				<p class="other-content">
@@ -71,12 +69,12 @@
 				<p class="other-content"><span class="author">– Jeffrey Albert, PhD.,</span> <span class="founder">AviSyn Founder</span></p>
 
 				<div class="contact-us-link">
-				<p><span class="contact">Contact us</span> to learn more.</p>
+				<p><a href="#"><span class="contact">Contact us</span></a> to learn more.</p>
 				</div>
 			</div>
 		</section>
-		<!-- Form section ends -->
 	</div>
 </div>
+<!-- Main contant container section ends -->
 
 <?php include_once 'footer.php'; ?>

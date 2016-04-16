@@ -5,16 +5,23 @@ header {
 		padding: 12px 0;
 		border-bottom: 5px solid @primary-blue-color;
 		margin-bottom: 0;
+		.logo {
+			@media(max-width: 480px) {
+				width: 80%;
+			}
+		}
 		.navbar-nav > li {
 			&.active {
 				> a {
 					color: darken(@menu-color, 10%);
 					background: transparent;
 					font-weight: 800;
+					font-family: OpenSansExtraBold;
 					&:hover,
 					&:focus {
 						color: darken(@menu-color, 10%);
 						background: transparent;
+						font-family: OpenSansExtraBold;
 					}
 				}
 			}
@@ -26,12 +33,22 @@ header {
 				.transition(all 0.2s ease-in-out 0s);
 				font-weight: 600;
 				font-size: 16px;
+				font-family: OpenSansSemibold;
 				&:hover,
 				&:focus {
 					color: darken(@menu-color, 10%);
 					background: transparent;
+					font-family: OpenSansSemibold;
+				}
+				@media(max-width: 991px) {
+					padding: 25px 10px;
 				}
 			}
+		}
+	}
+	@media(max-width: 767px) {
+		.navbar-toggle {
+			margin-top: 18px;
 		}
 	}
 }
