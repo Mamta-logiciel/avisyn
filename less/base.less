@@ -152,7 +152,7 @@ img {
 .welcome-banner {
 	background: url(../images/top-banner.png);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	min-height: 680px;
 	.banner-content {
 		background: rgba(0, 153, 210, 0.7);
@@ -318,139 +318,19 @@ img {
 		font-weight: normal;
 	}
 }
+.content-wrap {
+	background-color: #fff;
+	font-weight: normal;
+}
 .content-container {
 	background-image: -webkit-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
 	background-image:    -moz-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
 	background-image:      -o-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
 	background-image:         linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
 }
-/* Contact page style */
-.content-wrap {
-	background-color: #fff;
-	font-weight: normal;
-	color: #757575;
-}
-.contact-form {
-	border-top: 15px solid transparent;
-	padding: 40px;
-	.required-instruction {
-		margin-bottom: 20px;
-		font-size: 16px;
-	}
-	.required {
-		color: #ff0000;
-	}
-	.form-group {
-		label {
-			margin-top: 10px;
-			font-weight: normal;
-			font-size: 16px;
-		}
-		.text-box {
-			height: 55px;
-			border: 2px solid #00aff0;
-		}
-		textarea {
-			min-height: 185px;
-		}
-	}
-	.submit {
-		border: 2px solid #00aff0;
-		font-family: openSansBold;
-		font-size: 16px;
-		text-transform: uppercase;
-		color: #00aff0;
-		&:hover, &:focus {
-			background-color: #00aff0;
-			color: #fff;
-		}
-	}
-}
-
-/* Style for About page */
-
-.main-text-cols {
-	background-color: #fff;
-	font-size: 18px;
-	color: #b1b1b1;
-	.title {
-  		margin-bottom: 30px;
-  		font-size: 32px;
-  		text-transform: uppercase;
-  		color: #4fbfed;
-  	}
-  	.superior-benefits-content {
-  		margin-bottom: 35px;
-  	}
-  	.superior-benefits {
-  		margin: 0;
-  		margin-bottom: 10px;
-  		padding-left: 34px;
-  		padding-right: 	40px;
-  		font-family: OpenSansLightItalic;
-  		font-size: 34px;
-  		text-transform: inherit;
-  		@media (max-width: 480px) {
-  			padding-left: 0;
-  			font-size: 28px;
-  		}
-  	}
-  	.who-avisyn {
-	  	padding-left: 60px;
-	  	background: #f9f9f9;
-	  	.avisyn-text-outer {
-	  		padding-top: 62px;
-	  		padding-right: 0;
-	  		p {
-	  			margin-bottom: 30px;
-	  		}
-	  	}
-	  	.founder-img-outer {
-	  		padding-left: 0;
-	  		text-align: right;
-	  		.founder-img {
-		  		display: inline;
-		  	}
-		  	@media(max-width: 991px) {
-		  		text-align: center;
-		  	}
-	  	}
-	  	@media(max-width: 991px) {
-	  		padding-right: 50px;
-	  	}
-	}
-	.about-content-wrap {
-		margin-top: 30px;
-		padding: 50px 60px;
-		.author {
-			font-family: OpenSansSemibold;
-		}
-		.founder {
-			font-family: OpenSansExtraBold;
-		}
-		.contact-us-link {
-			margin-top: 70px;
-			.contact {
-				border-top: 1px solid #44c4f3;
-				padding-top: 20px;
-				color: #44c4f3;
-			}
-		}
-	}
-}
 .text-with-border {
 	margin: 0;
 	margin-top: 50px;
 	width: 80px;
 	border-color: #44c4f3;
-}
-.border-blue {
-	.contact-form {
-		border-color: @primary-blue-color;
-	}
-}
-.border-green {
-	.contact-form {
-		border-color: #8ec63f;
-	}
 }

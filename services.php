@@ -35,7 +35,7 @@
 			</div>
 
 			<!-- Section Insource with Avisyn -->
-			<div class="services-mid-banner mid-banner" data-link="why-insource">
+			<div class="services-mid-banner mid-banner" id="why-insource">
 				<div class="banner-inner-content">
 					<h4>why insource with avisyn</h4>
 					<p>With decades of combined drug discovery and development research in pharma and biotech — both managing and at the bench — the AviSyn team understands the kind of expertise it takes to move compounds through the pipeline. We nurture teams of expert, innovative scientists that can be in place, on site within weeks, and that will stay until your project is complete. Reporting directly to your project leaders while also being further guided and mentored by our experienced management team, AviSyn's scientists bring a wealth of industry experience to your site.</p>

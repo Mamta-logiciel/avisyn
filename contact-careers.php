@@ -1,12 +1,3 @@
-<!-- Form Validation -->
-<?php 
-	if($_SERVER["REQUEST_METHOD"] == "POST"){
-		$success = '<div class="alert alert-success alert-dismissible" role="alert">
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<strong>Thank You!<br>Your message has been successfully sent. We will send you a reply shortly.</strong>
-			 		</div>';
-	}
-?>
 <!-- Header Part -->
 <?php include('header.php'); ?>
 <!-- End Header Part -->
@@ -27,11 +18,6 @@
 	<div class="container">
 		<!-- Form Career section starts -->
 		<section class="content-wrap contact-form">
-			<?php 
-				if(!empty($success)) {
-					echo $success;
-				}
-			?>
 			<form method="post" action="" id="contact-form">
 				<p class="required-instruction">Fields marked with an <span class="required">*</span> are required</p>
 				<div class="form-group">
