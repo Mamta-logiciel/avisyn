@@ -1,14 +1,5 @@
 <?php include_once 'header.php'; ?>
 
-<!-- Sticky buttons section starts -->
-<div class="welcome-banner sticky-btns">
-	<div class="button-container">
-		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
-		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
-	</div>
-</div>
-<!-- Sticky buttons section ends -->
-
 <div class="main-wrap">
 	<div class="container">
 		<!-- Page heading section starts -->

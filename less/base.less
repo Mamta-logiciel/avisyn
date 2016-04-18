@@ -66,7 +66,7 @@ img {
 .button-container {
 	position: fixed;
 	float: left;
-	margin-top: -22px;
+	margin-top: -30px;
 	-webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
 	   -moz-transform: rotate(270deg);  /* FF3.5+ */
          -o-transform: rotate(270deg);  /* Opera 10.5 */
@@ -90,7 +90,7 @@ img {
 	padding: 6px 12px;
 	font-weight: bold;
 	font-family: OpenSansBold;
-	transition: .3s ease;
+	.transition(all 0.3s ease-in-out 0s);
 	&:hover,
 	&:focus {
 		color: #fff;
@@ -107,7 +107,6 @@ img {
 }
 .btn-contact-green {
 	background: @primary-green-color;
-	margin-left: -25px;
 	margin-right: 15px;
 	&:hover {
 		background: darken(@primary-green-color, 10%);
@@ -125,7 +124,6 @@ img {
 		background: rgba(0, 153, 210, 0.7);
 		padding: 18px 54px;
 		margin: 370px 145px 135px 145px;
-		// min-height: 190px;
 		text-align: center;
 		h1 {
 			text-transform: uppercase;
@@ -177,9 +175,6 @@ img {
 }
 .padding-left-zero {
 	padding-left: 0;
-}
-.letter-space05 {
-	letter-spacing: 0.5px;
 }
 @media(max-width: 767px) {
 	.padding-right-zero {
@@ -322,15 +317,6 @@ a {
 .right-padding {
 	padding-right: 0;
 }
-.text-right {
-	text-align: right;
-}
-.text-center {
-	text-align: center;
-}
-.text-left {
-	text-align: left;
-}
 .main-wrap {
 	width: 100%;
 	padding-top: 45px;
@@ -351,7 +337,10 @@ a {
 	}
 }
 .content-container {
-	background-image: linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
+	background-image: -webkit-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
+	background-image:    -moz-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
+	background-image:      -o-linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
+	background-image:         linear-gradient(transparent 155px, #f3f3f5 155px, #f3f3f5 100%);
 }
 /* Contact page style */
 .content-wrap {
@@ -360,7 +349,7 @@ a {
 	color: #757575;
 }
 .contact-form {
-	border-top: 15px solid #0198d1;
+	border-top: 15px solid @primary-blue-color;
 	padding: 40px;
 	.required-instruction {
 		margin-bottom: 20px;
@@ -429,7 +418,10 @@ a {
   	}
   	.who-avisyn {
 	  	padding-left: 60px;
-	 	background: linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
+	 	background: -webkit-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
+	 	background:    -moz-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
+	 	background:      -o-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
+	 	background:         linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
 	  	background-size: cover;
 	  	.about-avisyn-outer {
 	  		padding-top: 62px;
@@ -440,7 +432,7 @@ a {
 	  	.founder-img-outer {
 	  		text-align: right;
 	  		.founder-img {
-		  		display: initial;
+		  		display: inline;
 		  	}
 		  	@media(max-width: 991px) {
 		  		text-align: center;
@@ -480,6 +472,6 @@ a {
 .contact-wrap {
 	border-color: transparent;
 }
-.avisyn-text-space {
-	letter-spacing: 0.2px;
+.border-blue {
+	
 }

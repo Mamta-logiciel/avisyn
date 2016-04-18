@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -20,7 +20,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="AVISYN"></a>
+					<a class="navbar-brand logo" href="index.php"><img src="images/logo.png" alt="AVISYN"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,7 +28,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.php">Home</a></li>
 						<li><a href="services.php">Services</a></li>
-						<li><a href="#">Careers</a></li>
+						<li><a href="careers.php">Careers</a></li>
 						<li><a href="about.php">About</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
@@ -36,3 +36,10 @@
 			</div><!-- /.container -->
 		</nav>
 	</header>
+
+	<!-- Sticky buttons section starts -->
+	<div class="button-container">
+		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">build your career with us</a>
+		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
+	</div>
+	<!-- Sticky buttons section ends -->
