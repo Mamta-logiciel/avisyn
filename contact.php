@@ -1,4 +1,15 @@
-<?php include_once 'header.php'; ?>
+<!-- Form Validation -->
+<?php 
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		$success = '<div class="alert alert-success alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong>Thank You!<br>Your message has been successfully sent. We will send you a reply shortly.</strong>
+			 		</div>';
+	}
+?>
+<!-- Header Part -->
+<?php include('header.php'); ?>
+<!-- End Header Part -->
 
 <div class="main-wrap">
 	<div class="container">
@@ -15,23 +26,29 @@
 <div class="content-container">
 	<div class="container">
 		<!-- Form Contact section starts -->
-		<section class="content-wrap contact-form contact-wrap">
-			<form>
+		<section class="content-wrap contact-form">
+			<!-- Display error & success messages -->
+			<?php 
+				if(!empty($success)) {
+					echo $success;
+				}
+			?>
+			<form method="post" action="" id="contact-form">
 				<p class="required-instruction">Fields marked with an <span class="required">*</span> are required</p>
 				<div class="form-group">
 					<label for="name">Name <span class="required">*</span></label>
-					<input type="text" class="text-box form-control" id="name">
+					<input type="text" class="text-box form-control" name="name" minlength="3" id="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email <span class="required">*</span></label>
-					<input type="email" class="text-box form-control" id="email">
+					<input type="email" class="text-box form-control" name="email" id="email" required>
 				</div>
 				<div class="form-group">
 					<label for="message">Message <span class="required">*</span></label>
-					<textarea class="text-box form-control" id="message"></textarea>
+					<textarea class="text-box form-control" name="message" id="message" maxlength="200" required></textarea>
+					<label class="all-errors"></label>
 				</div>
-				<p class="color-grey">200 word(s) left</p>
-				<button type="submit" class="btn btn-default submit">Submit</button>
+				<button type="submit" name="submit" class="btn btn-default submit">Submit</button>
 			</form>
 		</section>
 		<!-- Form section ends -->
@@ -39,4 +56,6 @@
 </div>
 <!-- Main contant container section ends -->
 
-<?php include_once 'footer.php'; ?>
+<!-- Footer Part -->
+<?php include('footer.php'); ?>
+<!-- End Footer Part -->

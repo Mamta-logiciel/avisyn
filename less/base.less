@@ -1,11 +1,42 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300,700);
+@font-face {
+	font-family: OpenSansRegular;
+	src: url('../fonts/OpenSans-Regular.ttf')
+}
+@font-face {
+	font-family: OpenSansLight;
+	src: url('../fonts/OpenSans-Light.ttf')
+}
+@font-face {
+	font-family: OpenSansLightItalic;
+	src: url('../fonts/OpenSans-LightItalic.ttf')
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url('../fonts/OpenSans-Bold.ttf')
+}
+@font-face {
+	font-family: OpenSansSemibold;
+	src: url('../fonts/OpenSans-Semibold.ttf')
+}
+@font-face {
+	font-family: OpenSansExtraBold;
+	src: url('../fonts/OpenSans-ExtraBold.ttf')
+}
 body {
+	background: url('../images/body-bg.png');
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: @primary-grey-color;
-	font-family: 'Open Sans', sans-serif;
+	font-family: OpenSansRegular;
 	font-size: 18px;
 	line-height: 26px;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: OpenSansLight;
+}
 a {
+	text-decoration: none;
 	&:active,
 	&:focus,
 	&:hover {
@@ -32,6 +63,15 @@ img {
 .color-grey {
 	color: #898989;
 	font-size: 16px;
+}
+.all-errors {
+	color: red;
+	&::first-letter {
+		text-transform: capitalize;
+	}
+}
+.maxlength {
+	padding-top: 20px;
 }
 .btn-custom-blue {
 	background: #fff;
@@ -67,29 +107,23 @@ img {
 	position: fixed;
 	float: left;
 	margin-top: -30px;
-	-webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
-	   -moz-transform: rotate(270deg);  /* FF3.5+ */
-         -o-transform: rotate(270deg);  /* Opera 10.5 */
-	-webkit-transform-origin: 285px 285px 0;
-	   -moz-transform-origin: 285px 285px 0;
-	     -o-transform-origin: 285px 285px 0;
+	.rotate(270deg);
+	.origin(285px 285px 0);
 	@media (max-width: 767px) {
 		float: none;
 		position: relative;
 		margin-top: 10px;
 		text-align: center;
-		-webkit-transform: rotate(0deg);  /* Saf3.1+, Chrome */
-	       -moz-transform: rotate(0deg);  /* FF3.5+ */
-             -o-transform: rotate(0deg);  /* Opera 10.5 */
+		.rotate(0deg);
 	}
 }
 .btn-contact {
+	padding: 6px 12px;
 	text-transform: uppercase;
+	font-family: OpenSansBold;
 	font-size: 16px;
 	color: #fff;
-	padding: 6px 12px;
 	font-weight: bold;
-	font-family: OpenSansBold;
 	.transition(all 0.3s ease-in-out 0s);
 	&:hover,
 	&:focus {
@@ -122,28 +156,25 @@ img {
 	min-height: 680px;
 	.banner-content {
 		background: rgba(0, 153, 210, 0.7);
-		padding: 18px 54px;
 		margin: 370px 145px 135px 145px;
+		padding: 18px 54px;
 		text-align: center;
 		h1 {
-			text-transform: uppercase;
-			color: #fff;
-			font-size: 66px;
 			margin: 15px 0 3px;
-			font-weight: 300;
+			text-transform: uppercase;
+			font-size: 66px;
+			color: #fff;
 			span {
 				font-weight: bold;
 			}
 		}
 		p {
-			color: #fff;
-			font-size: 24px;
-			font-family: OpenSansLight;
 			padding: 0;
-			letter-spacing: 1px;
+			font-family: OpenSansLight;
+			font-size: 24px;
+			color: #fff;
 			a {
 				font-family: OpenSansSemibold;
-				font-weight: 600;
 				color: #fff;
 				&:hover,
 				&:focus {
@@ -166,10 +197,6 @@ img {
 		}
 	}
 }
-.sticky-btns {
-	background: transparent;
-	min-height: inherit;
-}
 .padding-right-zero {
 	padding-right: 0;
 }
@@ -190,10 +217,6 @@ img {
 		padding: 70px 0;
 		p {
 			font-size: 18px;
-			line-height: 26px;
-		}
-		.insourcing-content {
-			letter-spacing: 1.5px;
 			line-height: 26px;
 		}
 		.btn {
@@ -267,55 +290,14 @@ img {
 		text-align: center;
 		h4 {
 			font-size: 44px;
-			font-family: 'Open Sans', sans-serif;
+			font-family: OpenSansRegular;
 			text-transform: uppercase;
 			color: #fff;
 		}
 	}
 }
-
-@font-face {
-	font-family: OpenSansRegular;
-	src: url('../fonts/OpenSans-Regular.ttf')
-}
-@font-face {
-	font-family: OpenSansLight;
-	src: url('../fonts/OpenSans-Light.ttf')
-}
-@font-face {
-	font-family: OpenSansLightItalic;
-	src: url('../fonts/OpenSans-LightItalic.ttf')
-}
-@font-face {
-	font-family: OpenSansBold;
-	src: url('../fonts/OpenSans-Bold.ttf')
-}
-@font-face {
-	font-family: OpenSansSemibold;
-	src: url('../fonts/OpenSans-Semibold.ttf')
-}
-@font-face {
-	font-family: OpenSansExtraBold;
-	src: url('../fonts/OpenSans-ExtraBold.ttf')
-}
-body {
-	background: url('../images/body-bg.png');
-	background-position: center 0;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: OpenSansLight;
-}
-a {
-	text-decoration: none;
-}
 .padding-zero {
 	padding: 0;
-}
-.left-padding {
-	padding-left: 0;
-}
-.right-padding {
-	padding-right: 0;
 }
 .main-wrap {
 	width: 100%;
@@ -349,7 +331,7 @@ a {
 	color: #757575;
 }
 .contact-form {
-	border-top: 15px solid @primary-blue-color;
+	border-top: 15px solid transparent;
 	padding: 40px;
 	.required-instruction {
 		margin-bottom: 20px;
@@ -384,13 +366,10 @@ a {
 		}
 	}
 }
-.careers-form {
-	border-top-color: #8ec63f;
-}
 
 /* Style for About page */
 
-.about-container {
+.main-text-cols {
 	background-color: #fff;
 	font-size: 18px;
 	color: #b1b1b1;
@@ -418,18 +397,16 @@ a {
   	}
   	.who-avisyn {
 	  	padding-left: 60px;
-	 	background: -webkit-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
-	 	background:    -moz-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
-	 	background:      -o-linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
-	 	background:         linear-gradient(to right, #f9f9f9 ,#f9f9f9 ,#f9f9f9 ,#f9f9f9 , #e4dedd, #cabebe);
-	  	background-size: cover;
-	  	.about-avisyn-outer {
+	  	background: #f9f9f9;
+	  	.avisyn-text-outer {
 	  		padding-top: 62px;
+	  		padding-right: 0;
 	  		p {
 	  			margin-bottom: 30px;
 	  		}
 	  	}
 	  	.founder-img-outer {
+	  		padding-left: 0;
 	  		text-align: right;
 	  		.founder-img {
 		  		display: inline;
@@ -443,15 +420,13 @@ a {
 	  	}
 	}
 	.about-content-wrap {
+		margin-top: 30px;
 		padding: 50px 60px;
-		.other-content {
-			margin-top: 30px;
-			.author {
-				font-family: OpenSansSemibold;
-			}
-			.founder {
-				font-family: OpenSansExtraBold;
-			}
+		.author {
+			font-family: OpenSansSemibold;
+		}
+		.founder {
+			font-family: OpenSansExtraBold;
 		}
 		.contact-us-link {
 			margin-top: 70px;
@@ -469,9 +444,13 @@ a {
 	width: 80px;
 	border-color: #44c4f3;
 }
-.contact-wrap {
-	border-color: transparent;
-}
 .border-blue {
-	
+	.contact-form {
+		border-color: @primary-blue-color;
+	}
+}
+.border-green {
+	.contact-form {
+		border-color: #8ec63f;
+	}
 }

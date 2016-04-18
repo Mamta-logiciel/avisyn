@@ -5,28 +5,27 @@
 	background: url(../images/services-mid-banner.png) repeat-x;
 	background-color: @primary-blue-color;
 	background-size: cover;
-	.mid-content {
-		float: right;
-		width: 77%;
-		padding-right: 70px;
-		text-align: left;
-		h4 {
-			font-family: openSansLight;
-			font-size: 32px;
-		}
-		p {
-			color: #fff;
-		}
-		@media (max-width: 991px) {
-			float: none;
-			width: 100%;
-			padding-left: 50px;
-			padding-right: 50px;
-		}
+}
+.banner-inner-content {
+	float: right;
+	width: 77%;
+	padding-right: 70px;
+	text-align: left;
+	color: #fff;
+	h4 {
+		font-family: openSansLight;
+		font-size: 32px;
+		text-transform: uppercase;
 	}
 	@media (max-width: 991px) {
-		padding-top: 50px;
+		float: none;
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
+}
+@media (max-width: 991px) {
+	padding-top: 50px;
 }
 .services-text {
 	p {
@@ -37,11 +36,6 @@
 	padding-top: 10px;
 }
 .content-wrap {
-	.insourcing-wrap {
-		@media (max-width: 991px) {
-			background: #fff;
-		}
-	}
 	.services-cols {
 		padding: 50px 55px;
 		background: #fff;

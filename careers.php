@@ -1,11 +1,13 @@
-<?php include_once 'header.php'; ?>
+<!-- Header Part -->
+<?php include('header.php'); ?>
+<!-- End Header Part -->
 
 <div class="main-wrap">
 	<div class="container">
 		<!-- Page heading section starts -->
 		<section class="heading-wrap">
 			<h1 class="title">open jobs</h1>
-			<p class="tag-line">Exciting, cutting edge research with the security of full-time salary and benefits.</p>
+			<p class="tag-line">Exciting, cutting-edge research with the security of full-time salary and benefits.</p>
 		</section>
 		<!-- Page heading section ends -->	
 	</div>
@@ -14,25 +16,25 @@
 <!-- Main contant container section starts -->
 <div class="content-container">
 	<div class="container">
-		<section class="content-wrap about-container">
+		<section class="content-wrap main-text-cols">
 
 			<!-- Section Who is Avisyn -->
-			<div class="who-avisyn avisyn-team">
+			<div class="who-avisyn" id="why-join-avisyn-team">
 				<div class="row">
-					<div class="col-md-6 about-avisyn-outer avisyn-team-content right-padding">
+					<div class="col-md-6 avisyn-text-outer">
 						<h2 class="title">why join the avisyn team?</h2>
-						<p>Building the next generation of therapeutics can be a highly rewarding career where you can make a real difference in the world. But with many companies embracing a fail-fast philosophy, job security can be tough.</p>
-						<p class="avisyn-text-spacing">At AviSyn, you can grow your career working with top pharma and innovative biotech companies, moving on to a new client company once a project is complete. With competitive salaries and benefits, and a strong mentoring program, AviSyn is a great choice for your next career move.</p>
+						<p>Building the next generation of therapeutics can be a highly rewarding career where you can make a real difference in the world. But with many companies embracing a fail-fast philosophy, job security can be tough.<br><br>
+						At AviSyn, you can grow your career working with top pharma and innovative biotech companies, moving on to a new client company once a project is complete. With competitive salaries and benefits, and a strong mentoring program, AviSyn is a great choice for your next career move.</p>
 					</div>
-					<div class="col-md-6 founder-img-outer avisyn-team-image left-padding">
+					<div class="col-md-6 founder-img-outer">
 						<img src="images/avisyn-team.png" class="img-responsive founder-img">
 					</div>
 				</div>
 			</div>
 
 			<!-- Section Insource with Avisyn -->
-			<div class="services-mid-banner careers-mid-banner mid-banner">
-				<div class="mid-content">
+			<div class="careers-mid-banner mid-banner">
+				<div class="banner-inner-content">
 					<h4>what positions are open?</h4>
 					<p>We are currently hiring for a number of different scientific positions in the San Diego area.</p>
 				</div>
@@ -46,7 +48,7 @@
 							<img src="images/user-icon.png">
 						</div>
 						<div class="apply-btn">
-							<a href="#" class="btn btn-custom-blue btn-sm">Apply Now</a>
+							<a href="contact-careers.php" class="btn btn-custom-blue btn-sm">Apply Now</a>
 						</div>
 					</div>
 					<div class="col-md-10 col-sm-9 entry-content">
@@ -60,7 +62,7 @@
 							<img src="images/user-icon.png">
 						</div>
 						<div class="apply-btn">
-							<a href="#" class="btn btn-custom-blue btn-sm">Apply Now</a>
+							<a href="contact-careers.php" class="btn btn-custom-blue btn-sm">Apply Now</a>
 						</div>
 					</div>
 					<div class="col-md-10 col-sm-9 entry-content">
@@ -74,7 +76,7 @@
 							<img src="images/user-icon.png">
 						</div>
 						<div class="apply-btn">
-							<a href="#" class="btn btn-custom-blue btn-sm">Apply Now</a>
+							<a href="contact-careers.php" class="btn btn-custom-blue btn-sm">Apply Now</a>
 						</div>
 					</div>
 					<div class="col-md-10 col-sm-9 entry-content">
@@ -88,4 +90,6 @@
 </div>
 <!-- Main contant container section ends -->
 
-<?php include_once 'footer.php'; ?>
+<!-- Footer Part -->
+<?php include('footer.php'); ?>
+<!-- End Footer Part -->
