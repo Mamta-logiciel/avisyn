@@ -1,34 +1,106 @@
+    // variable to scroll page to particular section
+    var jump=function(e)
+    {
+       if (e){
+         e.preventDefault();
+         var target = $(this).attr("href");
+     }else{
+         var target = location.hash;
+     }
+
+     $('html,body').animate(
+     {
+         scrollTop: $(target).offset().top + -100
+     },500,function()
+     {
+         location.hash = target;
+     });
+    }
+
+    $('html, body').hide();
+
+
 $( document ).ready(function() {
-	$('.navbar-nav>li').click(function() {
-		$('.navbar-nav>li').removeClass('active');
-		$(this).addClass('active');
-	})
-	var path = window.location.pathname.split("/").pop();
-
-		// Account for home page with empty path
-		if ( path == '' ) {
-			path = 'index.php';
-		}
-
-	var target = $('.navbar-nav>li a[href="'+path+'"]');
-	// Add active class to target link
-	target.parent().addClass('active');
+      // code to pass Active class to Menus
+      var path = window.location.pathname.split("/").pop();
+    		// Account for home page with empty path
+    		if ( path == '' ) {
+    			path = 'index.php';
+    		}
+         var target = $('.navbar-nav>li a[href="'+path+'"]');
+    	// Add active class to target link
+    	target.parent().addClass('active');
 
 
-	/* sticky header */
-	// Fixa navbar ao ultrapassa-lo
-	var navbar = $('.navbar-default'),
-	distance = navbar.offset().top,
-	$window = $(window);
-	var navbarheight = $('.navbar-default').height();
 
-	$window.scroll(function() {
-		if ($window.scrollTop() === 0) {
-			navbar.removeClass('navbar-fixed-top');
-			$("body").css("padding-top", "0px");
-		} else {
-			navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-			$("body").css("padding-top", navbarheight + "px");
-		}
-	});
+      // code to scroll page to particular section
+      $('a[href^=#]').bind("click", jump);
+
+      if (location.hash){
+        setTimeout(function(){
+          $('html, body').scrollTop(0).show();
+          jump();
+      }, 0);
+    }else{
+        $('html, body').show();
+    }
+
+    /*Validate contact form*/
+
+    $("#contact-form").validate({
+        rules: {
+          name: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        message: {
+            required: true
+        }
+    }, 
+    showErrors: function(errorMap, errorList) {
+      var data = '';
+      var len = errorList.length;
+      console.log(len);
+      $.each(errorList, function (key, val) {
+        if(len == 1) {
+          data += val.element.name +' ';
+          data += "is required field.";
+      }
+      else if (len == 2) {
+          if(key == len - 1){
+            data += 'and '+val.element.name +' ';
+            data += "are required fields.";
+        }
+        else {
+            data += val.element.name +' ';
+        }
+    }
+    else {
+      if(key == len - 1){
+        data += 'and '+val.element.name +' ';
+        data += "are required fields.";
+    }
+    else {
+        data += val.element.name +', ';
+    }
+    }
+    });
+      $(".all-errors").html(data);
+      console.log(errorList);
+    }
+    });
+
+      // 
+      $("#message").maxlength();
+
+      //for perallex background position
+      if ($('div').hasClass('welcome-banner')) {
+        $.stellar({
+          horizontalScrolling: false,
+          verticalOffset:0
+      });  
+    }
 });

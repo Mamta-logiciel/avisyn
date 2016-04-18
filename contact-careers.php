@@ -1,13 +1,15 @@
-<?php include_once 'header.php'; ?>
-
-<!-- Sticky buttons section starts -->
-<div class="welcome-banner sticky-btns">
-	<div class="button-container">
-		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">start a career with us</a>
-		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
-	</div>
-</div>
-<!-- Sticky buttons section ends -->
+<!-- Form Validation -->
+<?php 
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		$success = '<div class="alert alert-success alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong>Thank You!<br>Your message has been successfully sent. We will send you a reply shortly.</strong>
+			 		</div>';
+	}
+?>
+<!-- Header Part -->
+<?php include('header.php'); ?>
+<!-- End Header Part -->
 
 <div class="main-wrap">
 	<div class="container">
@@ -21,26 +23,31 @@
 </div>
 
 <!-- Main contant container section starts -->
-<div class="content-container">
+<div class="content-container border-green">
 	<div class="container">
 		<!-- Form Career section starts -->
-		<section class="content-wrap careers-form contact-form">
-			<form>
+		<section class="content-wrap contact-form">
+			<?php 
+				if(!empty($success)) {
+					echo $success;
+				}
+			?>
+			<form method="post" action="" id="contact-form">
 				<p class="required-instruction">Fields marked with an <span class="required">*</span> are required</p>
 				<div class="form-group">
 					<label for="name">Name <span class="required">*</span></label>
-					<input type="text" class="text-box form-control" id="name">
+					<input type="text" class="text-box form-control" name="name" minlength="3" id="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email <span class="required">*</span></label>
-					<input type="email" class="text-box form-control" id="email">
+					<input type="email" class="text-box form-control" name="email" id="email" required>
 				</div>
 				<div class="form-group">
 					<label for="message">Message <span class="required">*</span></label>
-					<textarea class="text-box form-control" id="message"></textarea>
+					<textarea class="text-box form-control" name="message" id="message" maxlength="200" required></textarea>
+					<label class="all-errors"></label>
 				</div>
-				<p>200 word(s) left</p>
-				<button type="submit" class="btn btn-default submit">Submit</button>
+				<button type="submit" name="submit" class="btn btn-default submit">Submit</button>
 			</form>
 		</section>
 		<!-- Form section ends -->
@@ -48,4 +55,6 @@
 </div>
 <!-- Main contant container section ends -->
 
-<?php include_once 'footer.php'; ?>
+<!-- Footer Part -->
+<?php include('footer.php'); ?>
+<!-- End Footer Part -->

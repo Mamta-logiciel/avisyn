@@ -7,9 +7,9 @@
 				<div class="col-md-6">
 					<ul class="footer-menu navbar-right">
 						<li><a href="services.php">Services</a></li>
-						<li><a href="#">Careers</a></li>
+						<li><a href="careers.php">Careers</a></li>
 						<li><a href="about.php">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -18,8 +18,14 @@
 			<img src="images/small-logo.png" alt="ANISYS">
 		</div>
 	</footer>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+
+	<!-- include js files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.maxlength.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/steler.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>

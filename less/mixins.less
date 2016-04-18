@@ -3,6 +3,16 @@
        -o-transition: @transition;
           transition: @transition;
 }
+.rotate(@rotate) {
+  -webkit-transform: rotate(@rotate);  /* Saf3.1+, Chrome */
+     -moz-transform: rotate(@rotate);  /* FF3.5+ */
+         -o-transform: rotate(@rotate);  /* Opera 10.5 */
+}
+.origin(@origin) {
+  -webkit-transform-origin: @origin;
+     -moz-transform-origin: @origin;
+       -o-transform-origin: @origin;
+}
 .placeholder(@color: @input-color-placeholder) {
   &:-moz-placeholder            { color: @color; } // Firefox 4-18
   &::-moz-placeholder           { color: @color;   // Firefox 19+
