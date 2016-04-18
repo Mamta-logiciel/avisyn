@@ -38,7 +38,7 @@
 				<div class="col-sm-4 home-inner-cols">
 					<div class="text-center">
 			      		<div class="home-img-icon">
-				      		<img src="images/icon1.png" alt="icon">
+				      		<img src="images/insource-drug.png" alt="icon">
 				      	</div>
 			      	</div>
 			      	<h5>
@@ -49,7 +49,7 @@
 				<div class="col-sm-4 home-inner-cols">
 					<div class="text-center">
 			      		<div class="home-img-icon">
-				      		<img src="images/icon2.png" alt="icon">
+				      		<img src="images/expertise-drug.png" alt="icon">
 				      	</div>
 			      	</div>
 			      	<h5>
@@ -60,7 +60,7 @@
 			    <div class="col-sm-4 home-inner-cols">
 			    	<div class="text-center">
 			      		<div class="home-img-icon">
-				      		<img src="images/icon3.png" alt="icon">
+				      		<img src="images/regions-drug.png" alt="icon">
 				      	</div>
 			      	</div>
 			      	<h5>

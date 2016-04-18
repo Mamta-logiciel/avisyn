@@ -1,0 +1,46 @@
+.contact-form {
+	border-top: 15px solid transparent;
+	padding: 40px;
+	.required-instruction {
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	.required {
+		color: #ff0000;
+	}
+	.form-group {
+		label {
+			margin-top: 10px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+		.text-box {
+			height: 55px;
+			border: 2px solid #00aff0;
+		}
+		textarea {
+			min-height: 185px;
+		}
+	}
+	.submit {
+		border: 2px solid #00aff0;
+		font-family: openSansBold;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #00aff0;
+		&:hover, &:focus {
+			background-color: #00aff0;
+			color: #fff;
+		}
+	}
+}
+.border-blue {
+	.contact-form {
+		border-color: @primary-blue-color;
+	}
+}
+.border-green {
+	.contact-form {
+		border-color: #8ec63f;
+	}
+}
