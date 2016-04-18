@@ -27,5 +27,6 @@
 	<script src="js/steler.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/custom.js"></script>
+	<?php include('contact-popup.php'); ?>
 </body>
 </html>
