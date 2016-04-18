@@ -1,12 +1,22 @@
-<!-- Form Validation -->
-<?php 
-	if($_SERVER["REQUEST_METHOD"] == "POST"){
-		$success = '<div class="alert alert-success alert-dismissible" role="alert">
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<strong>Thank You!<br>Your message has been successfully sent. We will send you a reply shortly.</strong>
-			 		</div>';
-	}
-?>
+<!-- model code -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Thank You!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Your message has been successfully sent. We will send you a reply shortly.</p>
+      </div>
+      <div class="modal-footer">
+        <a class="text-right" href="index.php">AviSyn.com</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <!-- Header Part -->
 <?php include('header.php'); ?>
 <!-- End Header Part -->
@@ -27,11 +37,6 @@
 	<div class="container">
 		<!-- Form Career section starts -->
 		<section class="content-wrap contact-form">
-			<?php 
-				if(!empty($success)) {
-					echo $success;
-				}
-			?>
 			<form method="post" action="" id="contact-form">
 				<p class="required-instruction">Fields marked with an <span class="required">*</span> are required</p>
 				<div class="form-group">
@@ -58,3 +63,13 @@
 <!-- Footer Part -->
 <?php include('footer.php'); ?>
 <!-- End Footer Part -->
+
+<?php 
+	if($_SERVER["REQUEST_METHOD"] == "POST"):
+?>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$('#myModal').modal();
+	});
+</script>
+<?php endif; ?>

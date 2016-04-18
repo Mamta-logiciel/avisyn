@@ -100,7 +100,8 @@ $( document ).ready(function() {
       if ($('div').hasClass('welcome-banner')) {
         $.stellar({
           horizontalScrolling: false,
-          verticalOffset:0
+          verticalOffset: 100,
+          horizontalOffset: 0,
       });  
     }
 });
