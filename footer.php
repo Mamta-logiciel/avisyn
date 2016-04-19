@@ -21,7 +21,7 @@
 
 	<!-- include js files -->
 	<script src="js/jquery.js"></script>
-	<script src="js/jquery.maxlength.min.js"></script>
+	<script src="js/jQuery.textareaCounter.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/steler.js"></script>

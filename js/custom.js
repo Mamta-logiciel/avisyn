@@ -41,8 +41,12 @@ $( document ).ready(function() {
         $('html, body').show();
     }
 
-    //Validate contact form
+    //Validate Email Format
+    $.validator.methods.email = function( value, element ) {
+        return this.optional( element ) || /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test( value );
+    }
 
+    //Validate contact form
     $("#contact-form").validate({
         rules: {
             name: {
@@ -55,14 +59,42 @@ $( document ).ready(function() {
             message: {
                 required: true
             }
+        },
+        messages: {
+            email: {
+                required: "This is an required field",        
+                email: "Please enter a valid email address."        
+            },
+            name: {
+                required: "This is an required field",        
+                minlength: "Name must be at least 3 characters long."  
+            },
         }, 
         showErrors: function(errorMap, errorList) {
             var data = '';
             var len = errorList.length;
             $.each(errorList, function (key, val) {
                 if(len == 1) {
-                  data += val.element.name +' ';
-                  data += "is a required field.";
+                    if(val.element.name == 'email') {
+                        if(val.method == 'email') {
+                            data = "The email format you entered is invalid. Correct format: abc@domain.com.";
+                        }
+                        else {
+                            data = "Email is a required field.";
+                        }    
+                    }
+                    else if(val.element.name == 'name') {
+                        if(val.method == 'minlength') {
+                            data = "Name must be at least 3 characters long.";
+                        }
+                        else {
+                            data = "Name is a required field.";
+                        }    
+                    }
+                    else {
+                        data += val.element.name +' ';
+                        data += "is a required field.";
+                    }
                 }
                 else if (len == 2) {
                     if(key == len - 1) {
@@ -87,7 +119,8 @@ $( document ).ready(function() {
         }
     });
 
-    $("#message").maxlength();
+    // $("#message").maxlength();
+    $("#message").textareaCounter();
 
     //for parallex background position
     if ($('div').hasClass('welcome-banner')) {
