@@ -62,7 +62,7 @@ $( document ).ready(function() {
             $.each(errorList, function (key, val) {
                 if(len == 1) {
                   data += val.element.name +' ';
-                  data += "is required field.";
+                  data += "is a required field.";
                 }
                 else if (len == 2) {
                     if(key == len - 1) {
@@ -89,7 +89,7 @@ $( document ).ready(function() {
 
     $("#message").maxlength();
 
-    //for perallex background position
+    //for parallex background position
     if ($('div').hasClass('welcome-banner')) {
         $.stellar({
             horizontalScrolling: false,
