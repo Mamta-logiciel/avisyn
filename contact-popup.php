@@ -10,7 +10,7 @@
                 <p>Your message has been successfully sent. We will send you a reply shortly.</p>
             </div>
             <div class="modal-footer">
-                <a class="text-right" href="index.php">AviSyn.com</a>
+                Return to <a class="text-right" href="index.php">AviSyn.com</a>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
