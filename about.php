@@ -55,11 +55,17 @@
 					At AviSyn, we're re-formulating the way drug discovery and development gets done.
 				<br><br>
 				<span class="author">– Jeffrey Albert,</span> <span class="founder">PhD., AviSyn Founder</span></p>
-				<div class="contact-us-link">
-				<p><a href="contact.php"><span class="contact">Contact us</span></a> to learn more.</p>
+				<br><br>
 				</div>
 			</div>
 		</section>
+	</div>
+	<!-- Join Avisyn section -->
+	<div class="mid-banner">
+		<div class="mid-content">
+			<h4>WORK WITH THE AVISYN TEAM</h4>
+			<a href="contact.php" class="btn btn-custom-white btn-lg">LEARN MORE</a>
+		</div>
 	</div>
 </div>
 <!-- Main contant container section ends -->

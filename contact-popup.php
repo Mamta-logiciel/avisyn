@@ -23,4 +23,42 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ): ?>
             $('#myModal').modal();
         });
     </script>
+<?php 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $usermessage = $_POST['message'];
+    $to = "jeffrey.albert@intellisynrd.com";
+    $mailto = "info@biotech-animated.com";
+    $subject = "New Message From AviSyn.com";
+    $message = "
+    <html>
+    <head>
+        <title>New Message From AviSyn.com</title>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td style='padding-bottom: 20px;'>Name:</td>
+                    <td style='padding-bottom: 20px;'>".$name."</td>
+                </tr>
+                <tr>
+                    <td style='padding-bottom: 20px;'>Email:</td>
+                    <td style='padding-bottom: 20px;'>".$email."</td>
+                </tr>
+                <tr>
+                    <td style='padding-bottom: 20px;'>Message:</td>
+                    <td style='padding-bottom: 20px;'>".$usermessage."</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    </html>
+    ";
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "From: Avisyn <admin@avisyn.com>";
+    mail($to,$subject,$message,$headers);
+    mail($mailto,$subject,$message,$headers);
+?>
 <?php endif; ?>
