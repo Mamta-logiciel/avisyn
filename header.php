@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 	<!-- include stylesheets -->
+	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -36,12 +37,18 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
+			<!-- Sticky buttons section starts -->
+			<div class="button-container ">
+				<a href="contact-careers.php" class="btn btn-contact btn-contact-green">build your career with us</a>
+				<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
+			</div>
+			<!-- Sticky buttons section ends -->
 		</nav>
 	</header>
 
 	<!-- Sticky buttons section starts -->
-	<div class="button-container">
+	<!-- <div class="button-container">
 		<a href="contact-careers.php" class="btn btn-contact btn-contact-green">build your career with us</a>
 		<a href="contact-project.php" class="btn btn-contact btn-contact-blue">start a project with us</a>
-	</div>
+	</div> -->
 	<!-- Sticky buttons section ends -->

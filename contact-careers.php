@@ -30,7 +30,7 @@
 				</div>
 				<div class="form-group">
 					<label for="message">Message <span class="required">*</span></label>
-					<textarea class="text-box form-control" name="message" id="message" maxlength="200" required></textarea>
+					<textarea class="text-box form-control" name="message" id="message" required></textarea>
 					<label class="all-errors"></label>
 				</div>
 				<button type="submit" name="submit" class="btn btn-default submit">Submit</button>
