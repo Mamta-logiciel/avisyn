@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 	<!-- include stylesheets -->
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
